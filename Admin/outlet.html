@@ -99,144 +99,67 @@
       <!-- CONTENT -->
       <div class="pt-15 min-h-screen flex flex-col">
         <div class="flex-1 p-5">
-          <p class="text-3xl font-semibold text-gray-600">DASHBOARD</p>
-
+          <p class="text-3xl font-semibold text-gray-600">OUTLET</p>
+          <a
+            href=""
+            class="bi bi-plus-square-fill inline-flex items-center bg-blue-600 px-3 py-2 my-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-blue-900 hover:bg-blue-500 transition-all duration-150 ease-in-out"
+          >
+            <span class="mx-1.5">Tambah</span>
+          </a>
           <!-- Contoh content panjang -->
-          <div class="h-max mt-5">
-            <!-- Card -->
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-3"
+          <div class="h-max mt-3">
+            <table
+              class="w-full table-auto text-center [&_th]:border-b-2 [&_th]:border-gray-400 [&_th]:h-10 [&_td]:h-15"
             >
-              <!-- Card 1 -->
-              <div
-                class="flex h-20 rounded-lg p-3 items-center bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-              >
-                <!-- Card Content -->
-                <div
-                  class="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-blue-500"
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Outlet</th>
+                  <th>Alamat</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="odd:bg-gray-200 even:bg-white hover:bg-gray-300 transition-colors duration-200"
                 >
-                  <i class="bi bi-people-fill text-2xl text-white"></i>
-                </div>
-                <div class="flex-1 ml-3 px-2">
-                  <h3 class="font-semibold text-lg">Jumlah Karyawan</h3>
-                  <p class="text-lg">12</p>
-                </div>
-                <!-- Card Content -->
-              </div>
-              <!-- Card 1 -->
-              <!-- Card 2 -->
-              <div
-                class="flex h-20 rounded-lg p-3 items-center bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-              >
-                <!-- Card Content -->
-                <div
-                  class="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-yellow-800"
+                  <td>1</td>
+                  <td>Outlet Jakarta</td>
+                  <td>Jakarta Utara</td>
+                  <td class="flex gap-1 justify-center items-center">
+                    <a
+                      href=""
+                      class="bi bi-arrow-clockwise inline-flex w-8 h-8 items-center justify-center bg-green-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-green-900 hover:bg-green-700 transition-all duration-150 ease-in-out"
+                    >
+                    </a>
+                    <a
+                      href=""
+                      class="bi bi-trash-fill inline-flex w-8 h-8 items-center justify-center bg-red-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-red-900 hover:bg-red-700 transition-all duration-150 ease-in-out"
+                    >
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="odd:bg-gray-200 even:bg-white hover:bg-gray-300 transition-colors duration-200"
                 >
-                  <i class="bi bi-shop text-2xl text-white"></i>
-                </div>
-                <div class="flex-1 ml-3 px-2">
-                  <h3 class="font-semibold text-lg">Jumlah Outlet</h3>
-                  <p class="text-lg">12</p>
-                </div>
-                <!-- Card Content -->
-              </div>
-              <!-- Card 2 -->
-              <!-- Card 3 -->
-              <div
-                class="flex h-20 rounded-lg p-3 items-center bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-              >
-                <!-- Card Content -->
-                <div
-                  class="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-green-700"
-                >
-                  <i class="bi bi-basket3-fill text-2xl text-white"></i>
-                </div>
-                <div class="flex-1 ml-3 px-2">
-                  <h3 class="font-semibold text-lg">Jumlah Paket</h3>
-                  <p class="text-lg">12</p>
-                </div>
-                <!-- Card Content -->
-              </div>
-              <!-- Card 3 -->
-            </div>
-            <!-- Card -->
-            <div class="flex gap-3">
-              <!-- Chart Pemasukan -->
-              <div
-                class="relative h-100 w-1/2 bg-white border-gray-300 rounded-md p-3 shadow-xl shadow-gray-400/50"
-              >
-                <canvas id="pemasukan"></canvas>
-              </div>
-              <!-- Chart Pemasukan -->
-              <!-- Pesanan Masuk -->
-              <div
-                class="relative h-100 w-1/3 bg-white border-gray-300 rounded-md p-3 shadow-xl shadow-gray-400/50"
-              >
-                <h3 class="font-semibold">Pesanan Masuk</h3>
-                <div class="h-0.5 bg-gray-400/50 my-2"></div>
-                <!-- Message -->
-                <div
-                  class="flex p-2 mb-3 bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-                >
-                  <div class="w-3/4">
-                    <p class="font-semibold">Nama Pelanggan</p>
-                    <p>Paket</p>
-                  </div>
-                  <div class="w-1/4 flex items-center">
-                    <p>Rp12.000</p>
-                  </div>
-                </div>
-                <div
-                  class="flex p-2 mb-3 bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-                >
-                  <div class="w-3/4">
-                    <p class="font-semibold">Nama Pelanggan</p>
-                    <p>Paket</p>
-                  </div>
-                  <div class="w-1/4 flex items-center">
-                    <p>Rp12.000</p>
-                  </div>
-                </div>
-                <!-- Message -->
-              </div>
-              <!-- Pesanan Masuk -->
-              <!-- Data Outlet -->
-              <div
-                class="relative h-100 w-1/3 bg-white border-gray-300 rounded-md p-3 shadow-xl shadow-gray-400/50"
-              >
-                <h3 class="font-semibold">Data Outlet</h3>
-                <div class="h-0.5 bg-gray-400/50 my-2"></div>
-                <!-- Outlet List -->
-                <div
-                  class="flex p-2 mb-3 bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-                >
-                  <div
-                    class="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-red-900"
-                  >
-                    <i class="bi bi-shop text-2xl text-white"></i>
-                  </div>
-                  <div class="w-3/4 ml-3 items-center">
-                    <p class="font-semibold">Nama Outlet</p>
-                    <p>Alamat</p>
-                  </div>
-                </div>
-                <div
-                  class="flex p-2 mb-3 bg-white border border-gray-200 shadow-xl shadow-gray-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400/60 transition-all duration-300 ease-out"
-                >
-                  <div
-                    class="w-12 h-12 flex justify-center items-center rounded-full shrink-0 bg-red-900"
-                  >
-                    <i class="bi bi-shop text-2xl text-white"></i>
-                  </div>
-                  <div class="w-3/4 ml-3 items-center">
-                    <p class="font-semibold">Nama Outlet</p>
-                    <p>Alamat</p>
-                  </div>
-                </div>
-                <!-- Outlet List -->
-              </div>
-              <!-- Data Outlet -->
-            </div>
+                  <td>2</td>
+                  <td>Outlet Jakarta</td>
+                  <td>Jakarta Utara</td>
+                  <td class="flex gap-1 justify-center items-center">
+                    <a
+                      href=""
+                      class="bi bi-arrow-clockwise inline-flex w-8 h-8 items-center justify-center bg-green-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-green-900 hover:bg-green-700 transition-all duration-150 ease-in-out"
+                    >
+                    </a>
+                    <a
+                      href=""
+                      class="bi bi-trash-fill inline-flex w-8 h-8 items-center justify-center bg-red-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-red-900 hover:bg-red-700 transition-all duration-150 ease-in-out"
+                    >
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
