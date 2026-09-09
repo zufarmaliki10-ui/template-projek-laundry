@@ -99,67 +99,52 @@
       <!-- CONTENT -->
       <div class="pt-15 min-h-screen flex flex-col">
         <div class="flex-1 p-5">
-          <p class="text-3xl font-semibold text-gray-600">OUTLET</p>
-          <a
-            href="form.html"
-            class="bi bi-plus-square-fill inline-flex items-center bg-blue-600 px-3 py-2 my-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-blue-900 hover:bg-blue-500 transition-all duration-150 ease-in-out"
+          <p
+            class="text-3xl text-center font-semibold text-gray-600 border-gray-400 py-2 px-3 shadow-lg shadow-gray-400"
           >
-            <span class="mx-1.5">Tambah</span>
-          </a>
+            TAMBAH OUTLET
+          </p>
           <!-- Contoh content panjang -->
-          <div class="h-max mt-3">
-            <table
-              class="w-full table-auto text-center [&_th]:border-b-2 [&_th]:border-gray-400 [&_th]:h-10 [&_td]:h-15"
-            >
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Nama Outlet</th>
-                  <th>Alamat</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  class="odd:bg-gray-200 even:bg-white hover:bg-gray-300 transition-colors duration-200"
+          <div class="h-max mt-3 flex justify-center">
+            <form action="" class="px-3 py-1">
+              <div class="flex flex-col mb-3">
+                <label for="" class="text-lg font-semibold mb-1"
+                  >Nama Outlet</label
                 >
-                  <td>1</td>
-                  <td>Outlet Jakarta</td>
-                  <td>Jakarta Utara</td>
-                  <td class="flex gap-1 justify-center items-center">
-                    <a
-                      href=""
-                      class="bi bi-arrow-clockwise inline-flex w-8 h-8 items-center justify-center bg-green-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-green-900 hover:bg-green-700 transition-all duration-150 ease-in-out"
-                    >
-                    </a>
-                    <a
-                      href=""
-                      class="bi bi-trash-fill inline-flex w-8 h-8 items-center justify-center bg-red-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-red-900 hover:bg-red-700 transition-all duration-150 ease-in-out"
-                    >
-                    </a>
-                  </td>
-                </tr>
-                <tr
-                  class="odd:bg-gray-200 even:bg-white hover:bg-gray-300 transition-colors duration-200"
+                <input
+                  type="text"
+                  placeholder="Masukkan nama outlet..."
+                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
+                />
+              </div>
+              <div class="flex flex-col mb-3">
+                <label for="" class="text-lg font-semibold mb-1"
+                  >Nomer Telepon</label
                 >
-                  <td>2</td>
-                  <td>Outlet Jakarta</td>
-                  <td>Jakarta Utara</td>
-                  <td class="flex gap-1 justify-center items-center">
-                    <a
-                      href=""
-                      class="bi bi-arrow-clockwise inline-flex w-8 h-8 items-center justify-center bg-green-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-green-900 hover:bg-green-700 transition-all duration-150 ease-in-out"
-                    >
-                    </a>
-                    <a
-                      href=""
-                      class="bi bi-trash-fill inline-flex w-8 h-8 items-center justify-center bg-red-800 p-2 text-white text-sm rounded-md cursor-pointer hover:-translate-y-0.5 hover:shadow hover:shadow-red-900 hover:bg-red-700 transition-all duration-150 ease-in-out"
-                    >
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                <input
+                  type="text"
+                  placeholder="Masukkan nomer telepon..."
+                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
+                />
+              </div>
+              <div class="flex flex-col mb-3">
+                <label for="" class="text-lg font-semibold mb-1"
+                  >Alamat Outlet</label
+                >
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Masukkan alamat..."
+                  class="w-100 h-30 border border-gray-400 rounded-lg p-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="py-1 px-2 rounded-md w-100 bg-green-800 text-white cursor-pointer hover:bg-green-700 hover:-translate-y-1 transition-all duration-150 ease-in-out"
+              >
+                Tambah
+              </button>
+            </form>
           </div>
         </div>
 
