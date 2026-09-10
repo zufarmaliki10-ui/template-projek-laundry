@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="min-h-screen flex flex-col">
+      <!-- Navbar -->
+      <nav
+        class="fixed top-0 left-0 right-0 h-20 flex bg-teal-800 z-50 justify-center"
+      >
+        <h1
+          class="font-bold text-3xl flex justify-center items-center w-1/2 text-center text-white"
+        >
+          Laundry<span class="text-yellow-300">Kilat</span>
+        </h1>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Main Content -->
+      <main class="flex-1 pt-20">
+        <a
+          href="index.html"
+          class="bi bi-arrow-left-circle-fill bg-blue-400 py-1.5 px-2 flex w-max items-center m-2 text-white rounded-md hover:-translate-y-1 hover:bg-blue-500 hover:shadow-md hover:shadow-blue-600/50 transition-all duration-150 ease-in-out"
+        >
+          <span class="mx-0.5">Kembali</span>
+        </a>
+
+        <h3
+          class="text-center w-1/2 mx-auto text-2xl mb-5 font-bold border-b-2 pb-3 border-gray-400/50 shadow-md shadow-gray-400/50"
+        >
+          Generate Laporan
+        </h3>
+
+        <div class="flex flex-col items-center justify-center px-4">
+          <form action="" class="px-3 py-1 mb-4">
+            <div class="flex flex-col mb-3">
+              <label class="text-lg flex flex-col font-semibold mb-1">
+                Pilih Hari
+              </label>
+
+              <select
+                name=""
+                id=""
+                class="w-100 h-10 outline-none border-2 rounded-lg border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
+              >
+                <option value="">Senin</option>
+                <option value="">Selasa</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              class="py-1.5 rounded-md w-100 bg-blue-600 text-white cursor-pointer hover:bg-blue-500 hover:-translate-y-1 hover:scale-102 hover:shadow-md hover:shadow-blue-500/50 transition-all duration-150 ease-in-out"
+            >
+              Pilih
+            </button>
+          </form>
+          <table
+            class="w-full table-auto text-center [&_th]:border-b-2 [&_th]:border-gray-400 [&_th]:h-10 [&_td]:h-15"
+          >
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Pelanggan</th>
+                <th>Total Pembayaran</th>
+                <th>Tanggal Bayar</th>
+                <th>Tanggal Selesai</th>
+                <th>Status Pembayaran</th>
+                <th>Status Laundry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="odd:bg-gray-200 even:bg-white hover:bg-gray-300 transition-colors duration-200"
+              >
+                <td>1</td>
+                <td>Ahmad</td>
+                <td>Rp12.000</td>
+                <td>12 September 2026</td>
+                <td>12 September 2026</td>
+                <td>
+                  <span
+                    class="bg-green-800 py-1 px-2 rounded-lg text-xs text-white font-semibold"
+                    >Lunas</span
+                  >
+                </td>
+                <td>
+                  <span
+                    class="bg-green-800 py-1 px-2 rounded-lg text-xs text-white font-semibold"
+                    >Selesai</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="flex gap-2 my-4">
+            <a
+              href=""
+              class="bi bi-download bg-blue-600 py-1 px-2 font-semibold text-white rounded-md hover:bg-blue-500 hover:-translate-y-0.5 hover:scale-105 hover:shadow-md hover:shadow-blue-600/50 transition-all duration-150 ease-in-out"
+              ><span class="mx-1">Download</span></a
+            >
+            <a
+              href=""
+              class="bi bi-printer-fill bg-blue-600 py-1 px-2 font-semibold text-white rounded-md hover:bg-blue-500 hover:-translate-y-0.5 hover:scale-105 hover:shadow-md hover:shadow-blue-600/50 transition-all duration-150 ease-in-out"
+              ><span class="mx-1">Print</span></a
+            >
+          </div>
+        </div>
+      </main>
+      <!-- Main Content -->
+
+      <!-- Footer -->
+      <footer
+        class="h-20 mt-10 shrink-0 flex flex-col items-center justify-center border-t border-gray-300"
+      >
+        <p>
+          Created by
+          <a href="" class="text-blue-500 font-semibold"> OmahCreative </a>
+        </p>
+
+        <p>&copy;2026</p>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

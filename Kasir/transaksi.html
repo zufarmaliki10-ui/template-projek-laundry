@@ -33,7 +33,11 @@
           <span class="mx-0.5">Kembali</span>
         </a>
 
-        <h3 class="text-center text-2xl mb-5">Form Transaksi</h3>
+        <h3
+          class="text-center w-1/2 mx-auto text-2xl mb-5 font-bold border-b-2 pb-3 border-gray-400/50 shadow-md shadow-gray-400/50"
+        >
+          Form Pelanggan Baru
+        </h3>
 
         <form action="">
           <div class="flex justify-center gap-4">
@@ -92,23 +96,30 @@
                   Pilihan Paket
                 </label>
 
-                <input
-                  type="text"
-                  placeholder="Pilih paket..."
-                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
-                />
+                <select
+                  name=""
+                  id=""
+                  class="w-100 h-10 outline-none border-2 rounded-lg border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
+                >
+                  <option value="">Pilihan 1</option>
+                </select>
               </div>
 
               <div class="flex flex-col mb-3">
-                <label class="text-lg font-semibold mb-1">
+                <label class="text-lg flex flex-col font-semibold mb-1">
                   Paket Tambahan
+                  <span class="text-xs text-gray-500 font-semibold"
+                    >(Optional)</span
+                  >
                 </label>
 
-                <input
-                  type="text"
-                  placeholder="Pilih paket tambahan..."
-                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
-                />
+                <select
+                  name=""
+                  id=""
+                  class="w-100 h-10 outline-none border-2 rounded-lg border-gray-400 py-1 px-2 placeholder:text-gray-400 focus:border-blue-500 transition duration-300"
+                >
+                  <option value="">Pilihan 1</option>
+                </select>
               </div>
 
               <div class="flex flex-col mb-3">
@@ -132,6 +143,33 @@
                   class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 focus:border-blue-500 transition duration-300"
                 />
               </div>
+
+              <div class="flex flex-col mb-3">
+                <label class="text-lg font-semibold mb-1"> Diskon </label>
+
+                <input
+                  type="number"
+                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 focus:border-blue-500 transition duration-300"
+                />
+              </div>
+
+              <div class="flex flex-col mb-3">
+                <label class="text-lg font-semibold mb-1"> Pajak </label>
+
+                <input
+                  type="number"
+                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 focus:border-blue-500 transition duration-300"
+                />
+              </div>
+
+              <div class="flex flex-col mb-3">
+                <label class="text-lg font-semibold mb-1"> Total Harga </label>
+
+                <input
+                  type="number"
+                  class="w-100 h-10 outline-none border-b-2 border-gray-400 py-1 px-2 focus:border-blue-500 transition duration-300"
+                />
+              </div>
             </div>
           </div>
 
@@ -139,7 +177,7 @@
           <div class="flex justify-center mt-4 mb-6">
             <button
               type="submit"
-              class="w-1/2 py-1 rounded-md bg-green-700 text-white hover:bg-green-800 hover:-translate-y-1 hover:shadow-md hover:shadow-green-800/50 hover:cursor-pointer transition-all duration-200 ease-in-out"
+              class="w-1/2 py-1.5 rounded-md bg-green-700 text-white hover:bg-green-800 hover:-translate-y-1 hover:shadow-md hover:shadow-green-800/50 hover:cursor-pointer transition-all duration-200 ease-in-out"
             >
               Submit
             </button>
@@ -150,7 +188,7 @@
 
       <!-- Footer -->
       <footer
-        class="h-20 shrink-0 flex flex-col items-center justify-center border-t border-gray-300"
+        class="h-20 mt-10 shrink-0 flex flex-col items-center justify-center border-t border-gray-300"
       >
         <p>
           Created by
